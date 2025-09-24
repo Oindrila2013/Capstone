@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        body {
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(237, 237, 187);
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #7a1344;
+        }
+
+        .topnav a {
+            float: left;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 17px 15px;
+            text-decoration: none;
+            font-size: 30px;
+        }
+
+        .topnav a:hover {
+            background-color: #fb9595;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #83b6fe;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="">Home</a>
+        <a href="">About Us</a>
+        <a href="">Our Menu</a>
+        <a href="">Our Food Gallery</a>
+        <a href="">Our Reviews</a>
+        <a href="">Our Fame</a>
+        <a href="">Contact Us</a>
+    </div>
+
+    <section>
+        <img class="mySlides" src="./icecream.jpeg" alt="" style="height: 540px; width: 100%">
+        <img class="mySlides" src="./pizza.jpeg" alt="" style="height: 540px; width: 100%">
+        <img class="mySlides" src="./burger and fries.jpg" alt="" style="height: 540px; width: 100%">
+    </section>
+    <script>
+        var myIndex = 0;
+        carousel()
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides")
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+
+            myIndex++;
+
+            if (myIndex > x.length) {
+                myIndex = 1;
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000)
+        }
+    </script>
+</body>
+</html>
