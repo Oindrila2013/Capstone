@@ -14,6 +14,8 @@
         .topnav {
             overflow: hidden;
             background-color: #7a1344;
+            position: sticky;
+            top: 0px;
         }
 
         .topnav a {
@@ -33,6 +35,66 @@
         .topnav a.active {
             background-color: #83b6fe;
             color: black;
+        }
+
+        .pimg {
+            position: relative;
+            opacity: 0.70;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-image: url("4-5.jpg");
+            min-height: 500px;
+        }
+
+        .section {
+            text-align: center;
+            padding: 50px 80px;
+        }
+
+        .section-dark {
+            background-color: #282e34;
+            color: #ddd;
+        }
+
+        .ptext {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            color: #000;
+            font-size: 27px;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+        }
+
+        .ptext .border {
+            background-color: #111;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .ptext .border .trans {
+            background-color: transparent;
+        }
+
+        .footer {
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+            background-color: rgb(0, 115, 115);
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+
+        .parents {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(154, 207, 251);
+            width: 100%;
+            left: 0px;
+            bottom: 40px;
         }
     </style>
 </head>
@@ -72,5 +134,38 @@
             setTimeout(carousel, 3000)
         }
     </script>
+
+    <span class="border trans" style="font-size: 40px;">
+        <h4 style="text-align: center;">Welcome you all to my website😊</h4>
+    </span>
+    <section class="section section-dark">
+        <h2>Section One</h2>
+        <p>Food in here is made with love and care so, you could getthe feel of home but taste of professional hands.</p>
+    </section>
+    <div class="pimg">
+        <div class="ptext">
+            <span class="border trans">
+                Click To Learn More
+            </span>
+        </div>
+    </div>
+
+     <div class="parents">
+        <div>
+            <h2>Food Madness</h2>
+            <h3>Where professional hands meets the feeling of home.</h3>
+            <p>123 Baker Street</p>
+            <p>London, UK</p>
+        </div>
+        <div>
+            <p>Contact Us</p>
+            <p>About Us</p>
+            <p>Gallery</p>
+            <p>Our Products</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>@ copy all rights and reserved by Ankita</p>
+    </div
 </body>
 </html>
